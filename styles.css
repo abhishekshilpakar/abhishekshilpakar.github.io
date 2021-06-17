@@ -256,6 +256,7 @@ footer {
   color: #Blue;
 }
 
+
 @media screen and (max-width: 1200px) {
   nav {
     display: flex;
@@ -473,6 +474,9 @@ footer {
     color: #Blue;
   }
 
+}
+
+
   @media screen and (max-width: 2200px) {
   nav {
     display: flex;
@@ -689,6 +693,4 @@ footer {
     transform: scale(1.5);
     color: #Blue;
   }
-
-
 }

@@ -1,0 +1,257 @@
+@import url("https://fonts.googleapis.com/css?family=Quicksand:300,400,500,700");
+@import url("https://fonts.googleapis.com/css?family=Roboto");
+
+html {
+  scroll-behavior: smooth;
+  background-color: #faf4e1;
+}
+
+main#main-content {
+  grid-area: mainContent;
+  background-color: #2c2f33;
+  width: 100%;
+}
+
+nav {
+  display: flex;
+  justify-content: flex-end;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  background-color: #faf4e1;
+}
+
+nav#navbar a {
+  display: inline;
+  font-size: 20px;
+  font-family: "Quicksand", sans-serif;
+  text-decoration: none;
+  color: gray;
+  padding: 10px;
+  text-align: right;
+}
+
+nav#navbar a:hover {
+  transform: scale(1.1);
+  color: #3232d3;
+  text-decoration: underline;
+}
+
+.float-container {
+  padding: 40px;
+  vertical-align: center;
+  position: relative;
+}
+
+.floatPic {
+  width: 0%;
+  float: left;
+  position: absolute;
+  margin: 100px 0 0 100px;
+  align-items: center;
+  z-index: 1;
+}
+
+.floatInfo {
+  position: absolute;
+  width: 0%;
+  float: left;
+  top: 50%;
+  right: 50%;
+  margin: 100px 0 0 100px;
+  z-index: 2;
+}
+
+span img {
+  border-radius: 50%;
+  width: 400px;
+  height: 400px;
+  vertical-align: center;
+}
+
+.floatPic:hover {
+  transform: scale(1.2);
+  transition: transform 0.2s ease;
+}
+
+.front:hover {
+  display: none;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.back:hover {
+  display: flex;
+  background: url("https://www.citypng.com/public/uploads/preview/-121610109485q1gtq2jiko.png")
+    no-repeat;
+}
+.front {
+  z-index: 1;
+  width: 400px;
+  height: 400px;
+  background: url("https://scx1.b-cdn.net/csz/news/800/2017/theoreticala.jpg")
+    no-repeat;
+}
+.back {
+  z-index: 2;
+  width: 400px;
+  height: 400px;
+  background: url("https://www.citypng.com/public/uploads/preview/-121610109485q1gtq2jiko.png")
+    no-repeat;
+  display: none;
+}
+
+main#main-content {
+  padding-left: 70px;
+}
+
+.intro-text {
+  letter-spacing: 2px;
+  font-weight: normal;
+  color: #c7c9c8;
+  font-size: 30px;
+  font-family: "Roboto", sans-serif;
+  text-transform: uppercase;
+}
+
+.name {
+  font-size: 60px;
+  text-transform: uppercase;
+  margin: 15px 0px;
+  color: #e62e62;
+  font-family: "Roboto", sans-serif;
+  font-weight: 600;
+}
+
+.sub-text {
+  letter-spacing: 2px;
+  font-weight: normal;
+  color: #c7c9c8;
+  font-size: 20px;
+  font-family: "Roboto", sans-serif;
+  text-transform: uppercase;
+}
+
+#home {
+  height: 100vh;
+  position: relative;
+  top: 9%;
+}
+
+#education {
+  height: 100vh;
+  position: relative;
+  top: 9%;
+}
+
+.sectionTitle {
+  font-size: 50px;
+  font-family: "Quicksand", sans-serif;
+  /*   color: #808080; */
+  color: #78d69f;
+}
+
+.topScript {
+  font-size: 22px;
+  font-family: "Quicksand", sans-serif;
+  /*   color: #808080; */
+  color: #c7c9c8;
+}
+
+.middleScript {
+  font-size: 19px;
+  font-family: "Quicksand", sans-serif;
+  color: #808080;
+}
+
+.bottomScript {
+  font-size: 16px;
+  font-family: "Quicksand", sans-serif;
+  color: #808080;
+}
+
+.workDescription {
+  font-size: 15px;
+  font-family: "Quicksand", sans-serif;
+  color: #808080;
+  padding-left: 15px;
+}
+
+#projects {
+  height: 90vh;
+  position: relative;
+  top: 9%;
+}
+
+.projects-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  max-width: 1000px;
+  margin: 20px auto 0;
+}
+
+.project-tile {
+  max-width: 200px;
+  max-height: 100px;
+  margin: 50px;
+  text-decoration: none;
+  transition: transform 0.2s ease;
+}
+
+.project-tile:hover {
+  transform: scale(1.25);
+}
+
+.project-tile img {
+  max-width: 100%;
+}
+
+.project-tile p {
+  color: #ffff8f;
+  font-size: 40px;
+  margin-top: 10px;
+  text-align: center;
+}
+
+.project-tile img {
+  width: 200px;
+  height: 200px;
+}
+
+footer {
+  font-size: 80px;
+  font-family: "Quicksand", sans-serif;
+  color: #Red;
+  text-align: right;
+  padding: 0px;
+}
+
+.footerInfo {
+  grid-area: resume contact;
+  font-size: 20px;
+  text-align: center;
+  align-items: center;
+}
+
+.social-links {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  max-width: 810px;
+  margin: 20px auto 0;
+}
+
+.social-icon {
+  max-width: 200px;
+  max-height: 100px;
+  margin: 20px;
+  text-decoration: none;
+  transition: transform 0.3s ease;
+}
+
+.social-icon:hover {
+  transform: scale(1.5);
+  color: #Blue;
+}
